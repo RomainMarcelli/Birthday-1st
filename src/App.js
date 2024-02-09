@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Header from './components/header';
+import Main from './components/main';
 import { Helmet } from 'react-helmet';
 
 function App() {
@@ -16,20 +17,7 @@ function App() {
        
       </header> */}
       <Header />
-      <main>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload YO .
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </main>
+      <Main />
     </div>
   );
 }

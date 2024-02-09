@@ -1,0 +1,16 @@
+// Définissez vos tailles de police dans la carte
+$font-sizes: (
+  small: 14px,
+  medium: 16px,
+  large: 95px,
+  // Ajoutez d'autres tailles au besoin
+);
+
+// Utilisez une fonction pour accéder à une taille de police spécifique
+@function get-font-size($size) {
+  @return map-get($font-sizes, $size);
+}
+
+.name{
+    font-size: get-font-size(large);
+}

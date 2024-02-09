@@ -1,21 +1,10 @@
 /* Header.css */
-
-/* header {
-    border-bottom: 2px solid black;
+@font-face {
+    font-family: 'Bison';
+    src: url(../Bison-Bold\(PersonalUse\).ttf);
+    font-weight: 300;
+    font-style: normal;
 }
-
-h2 {
-    text-transform: uppercase;
-
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    font-family: biso;
-} */
 
 p {
     font-family: 'Bison', sans-serif;
