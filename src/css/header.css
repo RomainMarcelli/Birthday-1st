@@ -1,0 +1,32 @@
+/* Header.css */
+
+/* header {
+    border-bottom: 2px solid black;
+}
+
+h2 {
+    text-transform: uppercase;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    font-family: biso;
+} */
+
+p {
+    font-family: 'Bison', sans-serif;
+}
+
+
+.custom-line-height {
+    line-height: 48px;
+    font-family: 'Bison', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.045em;
+}
+
+/* Ajoutez d'autres styles au besoin */
