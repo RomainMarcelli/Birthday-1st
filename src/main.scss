@@ -6,11 +6,75 @@ $font-sizes: (
   // Ajoutez d'autres tailles au besoin
 );
 
+$line-height: (
+  txt: 32.4px,
+  header: 48px,
+);
+
+$width: (
+  left: 756px,
+  right: 675px,
+);
+
+$height: (
+  left: 767px,
+  right1: 208px,
+  right2: 365px,
+);
+
+$container-max-widths: (
+  sm: 675px,
+  md: 756px,
+  // lg: 960px,
+  // xl: 1140px,
+  // xxl: 1320px
+);
+$container-max-height: (
+  sm: 208px,
+  md: 365px,
+  lg: 767px,
+  // xl: 1140px,
+  // xxl: 1320px
+);
+
+
 // Utilisez une fonction pour accéder à une taille de police spécifique
 @function get-font-size($size) {
   @return map-get($font-sizes, $size);
 }
 
-.name{
-    font-size: get-font-size(large);
+@function get-line-height($type) {
+  @return map-get($line-height, $type);
 }
+
+@function get-width($position) {
+  @return map-get($width, $position);
+}
+
+@function get-height($position) {
+  @return map-get($height, $position);
+}
+@function get-container-max-width($position) {
+  @return map-get($container-max-widths, $position);
+}
+@function get-container-max-height($position) {
+  @return map-get($container-max-height, $position);
+}
+
+.name {
+  font-size: get-font-size(large);
+}
+
+.txt {
+  line-height: get-line-height(txt);
+}
+
+// .right {
+//   width: get-width(right);
+//   height: get-height(right1);
+// }
+
+.right1 {
+  max-width: get-container-max-width(sm);
+}
+
